@@ -9,7 +9,7 @@ export default function MiddleHeader(props) {
   const wishLength = useSelector((state) => state.wishes.value.length);
   const cartLength = useSelector((state) => state.carts.value.length);
   const [Input, setInput] = useState("");
-  console.log(wishLength);
+  // console.log(wishLength);
 
   return (
     <div class="header-content">
@@ -108,13 +108,18 @@ export default function MiddleHeader(props) {
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="Wallet">
+                        <Link class="dropdown-item" to="authentication-Wallet.html">
                           Wallet
                         </Link>
                       </li>
                       <li>
                         <Link class="dropdown-item" to="account-orders.html">
                           My Orders
+                        </Link>
+                      </li>
+                      <li>
+                        <Link class="dropdown-item" to="admin-page ">
+                          Admin
                         </Link>
                       </li>
                      
@@ -128,8 +133,8 @@ export default function MiddleHeader(props) {
                       <li>
                         <Link
                           class="dropdown-item"
-                          to={props.login ? "/" : "authentication-Login.html"}
-                        //   "
+                          to={props.login ? "/" : "/authentication-Login.html"}
+                        
                         >
                           {props.login ? "Logout" : "Login/Register"}
                         </Link>

@@ -1,0 +1,242 @@
+import React from 'react'
+import Header from '../components/Header/Header'
+import Sidebar from '../components/Sidebar/Sidebar'
+export default function Expenses() {
+  return (
+    <>
+    <Header />
+    <Sidebar />
+    <div className="page-wrapper">
+            <div className="content">
+                <div className="row">
+                    <div className="col-sm-8 col-5">
+                        <h4 className="page-title">Expenses</h4>
+                    </div>
+                    <div className="col-sm-4 col-7 text-right m-b-30">
+                        <a href="add-expense.html" className="btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Expense</a>
+                    </div>
+                </div>
+                <div className="row filter-row">
+                    <div className="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-12">
+                        <div className="form-group form-focus">
+                            <label className="focus-label">Item Name</label>
+                            <input type="text" className="form-control floating"/>
+                        </div>
+                    </div>
+                    {/* <div className="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-12">
+                        <div className="form-group form-focus select-focus">
+                            <label className="focus-label">Purchased By</label>
+                            <select className="select floating">
+                                <option> -- Select -- </option>
+                                <option>Loren Gatlin</option>
+                                <option>Tarah Shropshire</option>
+                            </select>
+                        </div>
+                    </div>  */}
+                    <div className="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-12">
+                        <div className="form-group form-focus select-focus">
+                            <label className="focus-label">Paid By</label>
+                            <select className="select floating">
+                                <option> -- Select -- </option>
+                                <option> Cash </option>
+                                <option> Cheque </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-12">
+                        <div className="form-group form-focus">
+                            <label className="focus-label">From</label>
+                            <div className="cal-icon">
+                                <input class="form-control floating datetimepicker" type="text"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-12">
+                        <div className="form-group form-focus">
+                            <label className="focus-label">To</label>
+                            <div className="cal-icon">
+                                <input class="form-control floating datetimepicker" type="text"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-12">
+                        <a href="#" className="btn btn-success btn-block"> Search </a>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="table-responsive">
+                            <table className="table table-striped custom-table mb-0 datatable">
+                                <thead>
+                                    <tr>
+                                        <th>Item Name</th>
+                                        <th>Purchase From</th>
+                                        <th>Purchase Date</th>
+                                        <th>Purchased By</th>
+                                        <th>Amount</th>
+                                        <th>Paid By</th>
+                                        <th className="text-center">Status</th>
+                                        <th className="text-right">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <strong>Desktop</strong>
+                                        </td>
+                                        <td>M.p. Nagar </td>
+                                        <td>17 Aug 2018</td>
+                                        <td>Sandeep</td>
+                                        <td>10,000</td>
+                                        <td>Online UPI</td>
+                                        <td className="text-center">
+                                            <div className="dropdown action-label">
+                                                <a class="custom-badge status-red dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                    Pending
+                                                </a>
+                                                <div className="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#">Pending</a>
+                                                    <a class="dropdown-item" href="#">Approved</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td className="text-right">
+                                            <div className="dropdown dropdown-action">
+                                                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                                <div className="dropdown-menu dropdown-menu-right">
+                                                    <a className="dropdown-item" href="edit-expense.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_expense"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Printer Machine</strong>
+                                        </td>
+                                        <td>Indore</td>
+                                        <td>22 Jun 2018</td>
+                                        <td>sanjay</td>
+                                        <td>12000</td>
+                                        <td>Cash</td>
+                                        <td className="text-center">
+                                            <div className="dropdown action-label">
+                                                <a class="custom-badge status-green dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                    Approved
+                                                </a>
+                                                <div className="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#">Pending</a>
+                                                    <a class="dropdown-item" href="#">Approved</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td className="text-right">
+                                            <div className="dropdown dropdown-action">
+                                                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                                <div className="dropdown-menu dropdown-menu-right">
+                                                    <a className="dropdown-item" href="edit-expense.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_expense"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+									<tr>
+                                        <td>
+                                            <strong>Laptop</strong>
+                                        </td>
+                                        <td>Bhopal Store</td>
+                                        <td>24 Jul 2018</td>
+                                        <td>Sachin</td>
+                                        <td>53,000</td>
+                                        <td>Cheque</td>
+                                        <td className="text-center">
+                                            <div className="dropdown action-label">
+                                                <a class="custom-badge status-green dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                    Approved
+                                                </a>
+                                                <div className="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#">Pending</a>
+                                                    <a class="dropdown-item" href="#">Approved</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td className="text-right">
+                                            <div className="dropdown dropdown-action">
+                                                <a href="#" className="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                                <div className="dropdown-menu dropdown-menu-right">
+                                                    <a className="dropdown-item" href="edit-expense.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a className="dropdown-item" href="#" data-toggle="modal" data-target="#delete_expense"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="notification-box">
+                <div className="msg-sidebar notifications msg-noti">
+                    <div className="topnav-dropdown-header">
+                        <span>Messages</span>
+                    </div>
+                    <div class="drop-scroll msg-list-scroll" id="msg_list">
+                        <ul className="list-box">
+                            <li>
+                                <a href="chat.html">
+                                    <div className="list-item">
+                                        <div className="list-left">
+                                            <span className="avatar">R</span>
+                                        </div>
+                                        <div className="list-body">
+                                            <span className="message-author">Sandeep Miles </span>
+                                            <span className="message-time">12:28 AM</span>
+                                            <div className="clearfix"></div>
+                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div className="list-item new-message">
+                                        <div className="list-left">
+                                            <span className="avatar">J</span>
+                                        </div>
+                                        <div className="list-body">
+                                            <span className="message-author">Abcd</span>
+                                            <span className="message-time">1 Aug</span>
+                                            <div className="clearfix"></div>
+                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div className="list-item">
+                                        <div className="list-left">
+                                            <span className="avatar">T</span>
+                                        </div>
+                                        <div className="list-body">
+                                            <span className="message-author"> Taran </span>
+                                            <span className="message-time">12:28 AM</span>
+                                            <div className="clearfix"></div>
+                                            <span className="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div className="topnav-dropdown-footer">
+                        <a href="chat.html">See all messages</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </>
+  )
+}

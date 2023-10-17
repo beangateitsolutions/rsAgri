@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./bottom.css";
+// import "./bottom.css";
 export default function BottomHeader() {
   return (
-    <div style={{position:"sticky",top:"0", zIndex:"9999"}}>
+    <div style={{position:"sticky",top:"-1px", zIndex:"9999",}}>
       
         <div id="post" class="primary-menu ">
           <nav class="navbar navbar-expand-xl w-100 navbar-dark container mb-0 p-0">

@@ -1,8 +1,15 @@
+// News api key = 22e27b08ab2c4a969d8e4e982df67ea8
+
+
 
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import OwlCarousel from 'react-owl-carousel';
+
+
+
+
 export default function News() {
     const options = {
         responsive: {
@@ -21,8 +28,71 @@ export default function News() {
             }
         }
     }
+
+
+    const [data, setData]=useState();
+
+    fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=22e27b08ab2c4a969d8e4e982df67ea8")
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(function (responseData) {
+          setData(responseData)
+          
+        //   console.log(newArtics.articles); 
+        // // Handle the response data here
+      })
+      .catch(function (error) {
+        console.error('Fetch error:', error);
+      });
+     
+
+    console.log(data)
+
+
+
+
+
+
+        // const [data,setData] = useState([]);
+
+        // const datafetch = async ()=>{
+        //     const newsdata = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=22e27b08ab2c4a969d8e4e982df67ea8');
+        //     const firstdata = await newsdata.json();
+        //     setData(firstdata);
+            // .then(function (response) {
+            //   if (!response.ok) {
+            //     throw new Error('Network response was not ok');
+            //   }
+            //   return response.json();
+            // })
+            // .then(function (responseData) {
+            //   console.log(responseData); // Handle the response data here
+            // })
+            // .catch(function (error) {
+            //   console.error('Fetch error:', error);
+            // });
+
+        // }
+        // useEffect(()=>{
+        //     datafetch();
+        // },[]);
+
+        
+      
   return (
     <>
+
+        {/* {data.map((topic,index)=>(
+            <div key={index}>
+                <h1>{topic.articles}</h1>
+            </div>
+        ))} */}
+
+        
          <section class="py-4">
                         <div class="container">
                             <div class="separator pb-4">
@@ -31,7 +101,7 @@ export default function News() {
                                 <div class="line"></div>
                             </div>
                             <div class="product-grid">
-                             <OwlCarousel class="latest-news owl-carousel owl-theme" margin={10} items={"4"} loop={true} mouseDrag={true} dots={false} autoplay={true}
+                             <OwlCarousel class="latest-news owl-carousel owl-theme" margin={10} items={"4"} loop={true} mouseDrag={true} dots={true} autoplay={true}
                     {...options} nav>
                                     <div class="item">
                                         <div class="card rounded-0 product-card border">
