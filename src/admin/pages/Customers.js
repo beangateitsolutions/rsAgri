@@ -582,9 +582,9 @@ export default function Customers() {
 													</label>
 												</div>
 											</div>
-											<div className="m-t-20 text-center">
+											{/* <div className="m-t-20 text-center">
 												<button className="btn btn-primary submit-btn">Save</button>
-											</div>
+											</div> */}
 										</form>
 									</div>
 								</div>
@@ -592,7 +592,7 @@ export default function Customers() {
 						</div>
 						<div className="modal-footer">
 							<button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-							<button className="btn btn-primary submit-btn">Create Retailer</button>
+							<button className="btn btn-primary submit-btn">Save</button>
 
 						</div>
 					</div>

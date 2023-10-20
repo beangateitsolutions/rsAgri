@@ -12,13 +12,7 @@ export default function Payslip() {
                     <div class="col-sm-5 col-4">
                         <h4 class="page-title">Payslip</h4>
                     </div>
-                    <div class="col-sm-7 col-8 text-right m-b-30">
-                        <div class="btn-group btn-group-sm">
-                            <button class="btn btn-white">CSV</button>
-                            <button class="btn btn-white">PDF</button>
-                            <button class="btn btn-white"><i class="fa fa-print fa-lg"></i> Print</button>
-                        </div>
-                    </div>
+                   
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -100,7 +94,17 @@ export default function Payslip() {
                                 <div class="col-sm-12">
                                     <p><strong>Net Salary: Rs 159698</strong> (Fifty nine thousand six hundred and ninety eight only.)</p>
                                 </div>
+                                 
                             </div>
+                        <div className="row">                            
+                            <div class="col-12 text-center m-b-30">
+                                <div class="btn-group btn-group-sm">                                    
+                                    <button class="btn btn-success p-2 h-100"><i class="fa fa-download "></i>PDF</button>
+                                    <button class="btn btn-warning p-2 h-100"><i class="fa fa-print fa-lg"></i> Print</button>
+                                </div>
+                            </div>
+                        </div>
+                            
                         </div>
                     </div>
                 </div>

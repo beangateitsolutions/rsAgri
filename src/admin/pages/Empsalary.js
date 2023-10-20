@@ -143,7 +143,8 @@ export default function Empsalary() {
                         <a
                           className="btn btn-sm btn-primary"
                           href="salary-view.html"
-                        >
+                        data-toggle="modal"
+                              data-target="#ViewSlipModalLong">
                           Generate Slip
                         </a>
                       </td>
@@ -222,7 +223,8 @@ export default function Empsalary() {
                         <a
                           className="btn btn-sm btn-primary"
                           href="salary-view.html"
-                        >
+                        data-toggle="modal"
+                              data-target="#ViewSlipModalLong">
                           Generate Slip
                         </a>
                       </td>
@@ -301,7 +303,8 @@ export default function Empsalary() {
                         <a
                           className="btn btn-sm btn-primary"
                           href="salary-view.html"
-                        >
+                        data-toggle="modal"
+                              data-target="#ViewSlipModalLong">
                           Generate Slip
                         </a>
                       </td>
@@ -704,6 +707,146 @@ export default function Empsalary() {
                 <button type="button" className="btn btn-primary">
                 Create Salary
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="modal fade"
+          id="ViewSlipModalLong"
+          tabIndex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLongTitle"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-xl" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                Payslip
+                </h5>
+                <button
+                  type="button"
+                  className="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">
+              <div class="content">
+                {/* <div class="row">
+                    <div class="col-sm-5 col-4">
+                        <h4 class="page-title">Payslip</h4>
+                    </div>
+                    <div class="col-sm-7 col-8 text-right m-b-30">
+                        <div class="btn-group btn-group-sm">
+                            <button class="btn btn-white">CSV</button>
+                            <button class="btn btn-white">PDF</button>
+                            <button class="btn btn-white"><i class="fa fa-print fa-lg"></i> Print</button>
+                        </div>
+                    </div>
+                </div> */}
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-box">
+                            <h4 class="payslip-title">Payslip for the month of July 2023</h4>
+                            <div class="row">
+                                <div class="col-sm-6 m-b-20">
+                                    <img src="assets/img/logo-dark.png" class="inv-logo" alt=""/>
+                                    <ul class="list-unstyled mb-0">
+                                        <li>RS Services</li>
+                                        <li>Piplani Petrol Pump,</li>
+                                        <li>Bhopal , India</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6 m-b-20">
+                                    <div class="invoice-details">
+                                        <h3 class="text-uppercase">Payslip #49029</h3>
+                                        <ul class="list-unstyled">
+                                            <li>Salary Month: <span>July, 2023</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 m-b-20">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <h5 class="mb-0"><strong>Sandeep</strong></h5></li>
+                                        <li><span>Front End Developer</span></li>
+                                        <li>Employee ID: NS-0001</li>
+                                        <li>Joining Date: 7 sep 2022</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div>
+                                        <h4 class="m-b-10"><strong>Earnings</strong></h4>
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Basic Salary</strong> <span class="float-right">Rs 16500</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Conveyance</strong> <span class="float-right">Rs 155</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Other Allowance</strong> <span class="float-right">Rs 155</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Total Earnings</strong> <span class="float-right"><strong>Rs 155</strong></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div>
+                                        <h4 class="m-b-10"><strong>Deductions</strong></h4>
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Tax Deducted at Source (T.D.S.)</strong> <span class="float-right">Rs 10</span></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td><strong>ESI</strong> <span class="float-right">Rs 10</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Loan</strong> <span class="float-right">Rs 1300</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Total Deductions</strong> <span class="float-right"><strong>Rs 159698</strong></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <p><strong>Net Salary: Rs 159698</strong> (Fifty nine thousand six hundred and ninety eight only.)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              </div>
+              <div className="modal-footer">
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                {/* <button class="btn btn-primary">CSV</button> */}
+                            <button class="btn btn-success">Download PDF</button>
+                            <button class="btn btn-warning"><i class="fa fa-print fa-lg"></i> Print</button>
+                        
               </div>
             </div>
           </div>

@@ -17,6 +17,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Register from "./pages/Register";
 import Trackingoder from "./pages/Trackingoder";
 import Wish from "./pages/Wish";
+import UserProfile from "./pages/UserProfile";
 import {
   loadBrand,
   loadCategory,
@@ -27,7 +28,7 @@ import webUrls from "./services/WebUrls";
 import TestCart from "./pages/TestCart";
 import Admin from "./admin/Admin";
 import Forgetpass from "./admin/components/Foreget/Forgetpass";
-import Menubar from "./admin/components/MenuBar/Menubar";
+
 import Dashboard from "./admin/pages/Dashboard";
 import Electronics from "./admin/pages/Electronics";
 import Accessories from "./admin/pages/Accessories";
@@ -44,11 +45,19 @@ import Taxes from "./admin/pages/Taxes"
 import Empsalary from "./admin/pages/Empsalary"
 import Payslip from "./admin/pages/Payslip"
 import AddElec from "./admin/pages/AddElec";
+import Profile from "./admin/pages/Profile";
+import UserDashboard from "./pages/UserDashboard";
+import UserAddress from "./pages/UserAddress";
+import UserPay from "./pages/UserPay";
 
-
+ 
 
 
 export default function App() {
+ 
+ 
+
+
   const dispatch = useDispatch();
   const addressroutes = useLocation();
   console.log(addressroutes.pathname);
@@ -84,6 +93,9 @@ export default function App() {
       
       <Routes>
         <Route path="/admin-page" element={<Admin />} />
+        <Route path="/admin-page/Profile" element={<Profile />} />
+
+
         <Route path="/admin-page/reset-pass" element={<Forgetpass />} />
         {/* <Route path="/admin-page/Dashbord" element={<Menubar />} /> */}
         <Route path="/admin-page/Dashbord"  element={<Dashboard/>} />
@@ -114,11 +126,17 @@ export default function App() {
     return (
       <div>
         <TopHeader />
-        <MiddleHeader login={false} />
+        <MiddleHeader login={true} />
         <BootomHeader />
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/account-user-profile.html" element={<UserProfile />} />
+          <Route path="/account-dashboard.html" element={<UserDashboard />} />
+          <Route path="/account-addresses.html" element={<UserAddress />} />
+          <Route path="/account-payment-methods.html" element={<UserPay />} />
+
+
 
           <Route path="/Trackingoder" element={<Trackingoder />} />
           <Route path="/Blogs" element={<Blog />} />

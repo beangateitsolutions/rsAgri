@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
-// let props.login = true;
-// console.log(props.login);
+
 
 export default function MiddleHeader(props) {
   const wishLength = useSelector((state) => state.wishes.value.length);
@@ -12,35 +11,35 @@ export default function MiddleHeader(props) {
   // console.log(wishLength);
 
   return (
-    <div class="header-content">
-      <div class="container">
-        <div class="row align-items-center gx-4">
-          <div class="col-auto">
-            <div class="d-flex align-items-center gap-3">
+    <div className="header-content">
+      <div className="container">
+        <div className="row align-items-center gx-4">
+          <div className="col-auto">
+            <div className="d-flex align-items-center gap-3">
               <div
-                class="mobile-toggle-menu d-inline d-xl-none"
+                className="mobile-toggle-menu d-inline d-xl-none"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar"
               >
-                <i class="bx bx-menu"></i>
+                <i className="bx bx-menu"></i>
               </div>
-              <div class="logo">
+              <div className="logo">
                 <Link to="index.html">
-                  <img src="./images/logo-icon.png" class="logo-icon" alt="" />
+                  <img src="./images/logo-icon.png" className="logo-icon" alt="" />
                 </Link>
               </div>
             </div>
           </div>
-          <div class="col-12 col-xl order-4 order-xl-0">
-            <div class="input-group flex-nowrap pb-3 pb-xl-0">
+          <div className="col-12 col-xl order-4 order-xl-0">
+            <div className="input-group flex-nowrap pb-3 pb-xl-0">
               <input
                 type="text"
-                class="form-control w-100 border-warning border border-3"
+                className="form-control w-100 border-warning border border-3"
                 placeholder="Search for Products"
                 onChange={(e) => setInput(e.target.value)}
               />
               <button
-                class="btn btn-warning btn-ecomm border-3 text-green"
+                className="btn btn-warning btn-ecomm border-3 text-green"
                 type="button"
               >
                 <Link to={"search/" + Input} style={{ textDecoration: "none" }}>
@@ -49,82 +48,82 @@ export default function MiddleHeader(props) {
               </button>
             </div>
           </div>
-          <div class="col-auto d-none d-xl-flex ">
-            <div class="d-flex align-items-center gap-3">
-              <div class="fs-1 text-content">
-                <i class="bx bx-headphone text-green"></i>
+          <div className="col-auto d-none d-xl-flex ">
+            <div className="d-flex align-items-center gap-3">
+              <div className="fs-1 text-content">
+                <i className="bx bx-headphone text-green"></i>
               </div>
-              <div class="text-center ">
-                <p class="mb-0 text-content text-green">CALL US NOW</p>
-                <h5 class="mb-0 text-green">+011 5827918</h5>
+              <div className="text-center ">
+                <p className="mb-0 text-content text-green">CALL US NOW</p>
+                <h5 className="mb-0 text-green">+011 5827918</h5>
               </div>
             </div>
           </div>
-          <div class="col-auto ms-auto">
-            <div class="top-cart-icons">
-              <nav class="navbar navbar-expand">
-                <ul class="navbar-nav">
-                  <li class="nav-item dropdown dropdown-large">
-                    <Link to="/Cart" class="nav-link   fs-1 cart-link">
+          <div className="col-auto ms-auto">
+            <div className="top-cart-icons">
+              <nav className="navbar navbar-expand">
+                <ul className="navbar-nav">
+                  <li className="nav-item dropdown dropdown-large">
+                    <Link to="/Cart" className="nav-link   fs-1 cart-link">
                       {" "}
-                      <span class="alert-count">{cartLength}</span>
-                      <i class="bx bx-shopping-bag"></i>
+                      <span className="alert-count">{cartLength}</span>
+                      <i className="bx bx-shopping-bag"></i>
                     </Link>
                   </li>
 
-                  <li class="nav-item dropdown dropdown-large">
-                    <Link to="/wish" class="nav-link   fs-1 cart-link">
+                  <li className="nav-item dropdown dropdown-large">
+                    <Link to="/wish" className="nav-link   fs-1 cart-link">
                       {" "}
-                      <span class="alert-count">{wishLength}</span>
-                      <i class="bx bx-heart"></i>
+                      <span className="alert-count">{wishLength}</span>
+                      <i className="bx bx-heart"></i>
                     </Link>
                   </li>
 
-                  <li class="nav-item dropdown">
+                  <li className="nav-item dropdown">
                     <Link
-                      class="nav-link  dropdown-toggle-nocaret fs-1 text-green"
+                      className="nav-link  dropdown-toggle-nocaret fs-1 text-green"
                       to="javascript:;"
                       data-bs-toggle="dropdown"
                     >
-                      <i class="bx bx-user-circle"></i>
+                      <i className="bx bx-user-circle"></i>
                     </Link>
-                    <ul class="dropdown-menu">
+                    <ul className="dropdown-menu">
                     <li>
                         <Link
-                          class="dropdown-item"
-                          to="account-user-details.html"
+                          className="dropdown-item"
+                          to="/account-user-profile.html"
                         >
                           Profile
                         </Link>
                       </li>
-                      <li>
-                        <Link class="dropdown-item" to="account-dashboard.html">
+                      {/* <li>
+                        <Link className="dropdown-item" to="account-dashboard.html">
                           Dashboard
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="account-downloads.html">
+                        <Link className="dropdown-item" to="account-downloads.html">
                           Downloads
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="authentication-Wallet.html">
+                        <Link className="dropdown-item" to="authentication-Wallet.html">
                           Wallet
                         </Link>
-                      </li>
+                      </li> 
                       <li>
-                        <Link class="dropdown-item" to="account-orders.html">
+                        <Link className="dropdown-item" to="account-orders.html">
                           My Orders
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
-                        <Link class="dropdown-item" to="admin-page ">
+                        <Link className="dropdown-item" to="admin-page ">
                           Admin
                         </Link>
                       </li>
                      
                       <li>
-                        <hr class="dropdown-divider" />
+                        <hr className="dropdown-divider" />
                       </li>
                     
 
@@ -132,16 +131,19 @@ export default function MiddleHeader(props) {
 
                       <li>
                         <Link
-                          class="dropdown-item"
+                          className="dropdown-item"
                           to={props.login ? "/" : "/authentication-Login.html"}
-                        
+                        // onClick={()=>{
+                        //   // process.env.REACT_APP_LOGIN="false"
+                        //   console.log(process.env.REACT_APP_LOGIN)
+                        // }}
                         >
                           {props.login ? "Logout" : "Login/Register"}
                         </Link>
                       </li>
                       {/* <li>
                         <Link
-                          class="dropdown-item"
+                          className="dropdown-item"
                           to="authentication-register.html"
                         >
                           Register
@@ -149,7 +151,7 @@ export default function MiddleHeader(props) {
                       </li> */}
                       {/* <li>
                         <Link
-                          class="dropdown-item"
+                          className="dropdown-item"
                           to="authentication-reset-password.html"
                         >
                           Password
@@ -158,7 +160,7 @@ export default function MiddleHeader(props) {
 
                       <li>
                         <Link
-                          class="dropdown-item"
+                          className="dropdown-item"
                           to="authentication-reset-password.html"
                         >
                           LogOut
@@ -166,8 +168,8 @@ export default function MiddleHeader(props) {
                       </li> */}
                     </ul>
                   </li>
-                  {/* <!-- <li class="nav-item"><Link to="wishlist.html" class="nav-link cart-link"><i
-                                        class='bx bx-heart'></i></Link>
+                  {/* <!-- <li className="nav-item"><Link to="wishlist.html" className="nav-link cart-link"><i
+                                        className='bx bx-heart'></i></Link>
                             </li> --> */}
                 </ul>
               </nav>

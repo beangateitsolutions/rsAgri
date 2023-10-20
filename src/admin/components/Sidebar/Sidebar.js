@@ -24,7 +24,7 @@ export default function Sidebar() {
             <ul>
               {/* <li className="menu-title">Main </li> */}
               <li className="active">
-                <Link to="/admin-page/Dashbord">
+                <Link className='text-decoration-none' to="/admin-page/Dashbord">
                   <i className="fa fa-dashboard"></i> <span>Dashboard</span>
                 </Link>
               </li>
@@ -35,24 +35,24 @@ export default function Sidebar() {
                 </a>
                 <ul className="d-none" id="drop-menu0">
                   <li>
-                    <Link class="" to="/admin-page/Electronics">
+                    <Link className='text-decoration-none' class="" to="/admin-page/Electronics">
                       Electronics
                     </Link>
                   </li>
                   <li>
-                    <Link class="" to="/admin-page/Accessories">
+                    <Link className='text-decoration-none' class="" to="/admin-page/Accessories">
                       Accessories
                     </Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link to="/admin-page/Retailers">
+                <Link className='text-decoration-none' to="/admin-page/Retailers">
                   <i className="fa-solid fa-store"></i> <span>Retailers</span>
                 </Link>
               </li>
               <li>
-                <Link to="/admin-page/Customers">
+                <Link className='text-decoration-none' to="/admin-page/Customers">
                   <i className="fa fa-user"></i> <span>Customers</span>
                 </Link>
               </li>
@@ -64,16 +64,16 @@ export default function Sidebar() {
                 </a>
                 <ul className="" id="drop-menu1">
                   <li>
-                    <Link to="/admin-page/Employees">Employees List</Link>
+                    <Link className='text-decoration-none' to="/admin-page/Employees">Employees List</Link>
                   </li>
                   <li>
-                    <Link to="/admin-page/Leaves">Leaves</Link>
+                    <Link className='text-decoration-none' to="/admin-page/Leaves">Leaves</Link>
                   </li>
                   <li>
-                    <Link to="/admin-page/Holidays">Holidays</Link>
+                    <Link className='text-decoration-none' to="/admin-page/Holidays">Holidays</Link>
                   </li>
                   <li>
-                    <Link to="/admin-page/Attendance">Attendance</Link>
+                    <Link className='text-decoration-none' to="/admin-page/Attendance">Attendance</Link>
                   </li>
                 </ul>
               </li>
@@ -86,11 +86,11 @@ export default function Sidebar() {
                 <ul className="" id="drop-menu2">
                   
                   <li>
-                    <Link to="/admin-page/Payments">Payments</Link>
+                    <Link className='text-decoration-none'  to="/admin-page/Payments">Payments</Link>
                   </li>
                   
                   <li>
-                    <Link to="/admin-page/Taxes">Taxes</Link>
+                    <Link className='text-decoration-none' to="/admin-page/Taxes">Taxes</Link>
                   </li>
                 </ul>
               </li>
@@ -101,10 +101,10 @@ export default function Sidebar() {
                 </a>
                 <ul className="" id="drop-menu3">
                   <li>
-                  <Link to="/admin-page/EmployeeSalary"> Employee Salary </Link>
+                  <Link className='text-decoration-none' to="/admin-page/EmployeeSalary"> Employee Salary </Link>
                   </li>
                   <li>
-                  <Link to="/admin-page/Payslip"> Payslip </Link>
+                  <Link className='text-decoration-none' to="/admin-page/Payslip"> Payslip </Link>
                   </li>
                 </ul>
               </li>
@@ -118,21 +118,21 @@ export default function Sidebar() {
                   {/* <!-- <li><a href="expense-reports.html"> Expense Report </a></li> */}
                   {/* <li><a href="invoice-reports.html"> Invoice Report </a></li> --> */}
                   <li>
-                  <Link to="/admin-page/Invoices">Invoices Report</Link>
+                  <Link className='text-decoration-none' to="/admin-page/Invoices">Invoices Report</Link>
                   </li>
                   <li>
-                  <Link to="/admin-page/Expenses">Expenses Report</Link>
+                  <Link className='text-decoration-none' to="/admin-page/Expenses">Expenses Report</Link>
                   </li>
                 </ul>
               </li>
-              <li>
+              {/* <li>
                 <a href="settings.html">
                   <i className="fa fa-cog"></i> <span>Settings</span>
                 </a>
-              </li>
+              </li> */}
 
-              <li className="menu-title">Extras</li>
-              <li className="submenu">
+              {/* <li className="menu-title">Extras</li> */}
+              {/* <li className="submenu">
                 <a>
                   <i className="fa fa-columns"></i> <span>Pages</span>{" "}
                   <span class="menu-arrow"></span>
@@ -160,6 +160,10 @@ export default function Sidebar() {
                     <a href="error-404.html">404 Error </a>
                   </li>
                 </ul>
+              </li> */}
+
+              <li>
+                <Link className='text-decoration-none' to="/admin-page"><i class="fa-solid fa-right-from-bracket fa-rotate-180 ml-0"></i> <span>Log Out</span></Link>
               </li>
             </ul>
           </div>

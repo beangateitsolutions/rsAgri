@@ -1,4 +1,5 @@
 import React from 'react'
+import ProSidebar from '../components/ProfileSideBar.js/ProSidebar'
 
 export default function Myoder() {
     return (
@@ -10,7 +11,7 @@ export default function Myoder() {
 				<section class="py-3 border-bottom border-top d-none d-md-flex bg-light">
 					<div class="container">
 						<div class="page-breadcrumb d-flex align-items-center">
-							<h3 class="breadcrumb-title pe-3">My Orders</h3>
+							<h3 class="breadcrumb-title pe-3">Orders</h3>
 							<div class="ms-auto">
 								<nav aria-label="breadcrumb">
 									<ol class="breadcrumb mb-0 p-0">
@@ -18,7 +19,7 @@ export default function Myoder() {
 										</li>
 										<li class="breadcrumb-item"><a href="javascript:;">Account</a>
 										</li>
-										<li class="breadcrumb-item active" aria-current="page">My Orders</li>
+										<li class="breadcrumb-item active" aria-current="page">Orders</li>
 									</ol>
 								</nav>
 							</div>
@@ -33,20 +34,7 @@ export default function Myoder() {
 						<div class="card">
 							<div class="card-body">
 								<div class="row">
-									<div class="col-lg-4">
-										<div class="card shadow-none mb-3 mb-lg-0 border">
-											<div class="card-body">
-												<div class="list-group list-group-flush">	<a href="account-dashboard.html" class="list-group-item d-flex justify-content-between align-items-center bg-transparent">Dashboard <i class='bx bx-tachometer fs-5'></i></a>
-													<a href="account-orders.html" class="list-group-item active d-flex justify-content-between align-items-center">Orders <i class='bx bx-cart-alt fs-5'></i></a>
-													<a href="account-downloads.html" class="list-group-item d-flex justify-content-between align-items-center bg-transparent">Downloads <i class='bx bx-download fs-5'></i></a>
-													<a href="account-addresses.html" class="list-group-item d-flex justify-content-between align-items-center bg-transparent">Addresses <i class='bx bx-home-smile fs-5'></i></a>
-													<a href="account-payment-methods.html" class="list-group-item d-flex justify-content-between align-items-center bg-transparent">Payment Methods <i class='bx bx-credit-card fs-5'></i></a>
-													<a href="account-user-details.html" class="list-group-item d-flex justify-content-between align-items-center bg-transparent">Account Details <i class='bx bx-user-circle fs-5'></i></a>
-													<a href="#" class="list-group-item d-flex justify-content-between align-items-center bg-transparent">Logout <i class='bx bx-log-out fs-5'></i></a>
-												</div>
-											</div>
-										</div>
-									</div>
+									<ProSidebar/>
 									<div class="col-lg-8">
 										<div class="card shadow-none mb-0">
 											<div class="card-body">

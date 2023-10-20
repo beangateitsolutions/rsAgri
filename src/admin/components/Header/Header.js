@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -121,18 +122,13 @@ export default function Header() {
               <span>Admin</span>
             </a>
             <div className="dropdown-menu">
-              <a class="dropdown-item" href="profile.html">
-                My Profile
-              </a>
+            <Link class="dropdown-item" to="/admin-page/Profile">
+              My Profile
+            </Link>
               <a class="dropdown-item" href="edit-profile.html">
                 Edit Profile
               </a>
-              <a class="dropdown-item" href="settings.html">
-                Settings
-              </a>
-              <a class="dropdown-item" href="login.html">
-                Logout
-              </a>
+              
             </div>
           </li>
         </ul>
@@ -146,18 +142,14 @@ export default function Header() {
             <i className="fa fa-ellipsis-v"></i>
           </a>
           <div className="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="profile.html">
+            <Link class="dropdown-item" to="/admin-page/Profile">
               My Profile
-            </a>
+            </Link>
             <a class="dropdown-item" href="edit-profile.html">
               Edit Profile
             </a>
-            <a class="dropdown-item" href="settings.html">
-              Settings
-            </a>
-            <a class="dropdown-item" href="login.html">
-              Logout
-            </a>
+            
+            
           </div>
         </div>
       </div>

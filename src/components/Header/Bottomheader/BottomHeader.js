@@ -5,44 +5,44 @@ export default function BottomHeader() {
   return (
     <div style={{position:"sticky",top:"-1px", zIndex:"9999",}}>
       
-        <div id="post" class="primary-menu ">
-          <nav class="navbar navbar-expand-xl w-100 navbar-dark container mb-0 p-0">
+        <div id="post" className="primary-menu ">
+          <nav className="navbar navbar-expand-xl w-100 navbar-dark container mb-0 p-0">
             <div
-              class="offcanvas offcanvas-start"
-              tabindex="-1"
+              className="offcanvas offcanvas-start"
+              tabIndex="-1"
               id="offcanvasNavbar"
             >
-              <div class="offcanvas-header">
-                <div class="offcanvas-logo">
+              <div className="offcanvas-header">
+                <div className="offcanvas-logo">
                   <img src="assets/images/logo-icon.png" width="100" alt="" />
                 </div>
                 <button
                   type="button"
-                  class="btn-close text-reset"
+                  className="btn-close text-reset"
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="offcanvas-body primary-menu">
-                <ul class="navbar-nav justify-content-start flex-grow-1 gap-1">
-                  <li class="nav-item">
-                    <Link class="nav-link" to="index">
+              <div className="offcanvas-body primary-menu">
+                <ul className="navbar-nav justify-content-start flex-grow-1 gap-1">
+                  <li className="nav-item">
+                    <Link className="nav-link" to="index">
                       Home
                     </Link>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li className="nav-item dropdown">
                     <Link
-                      class="nav-link  dropdown-toggle-nocaret"
+                      className="nav-link  dropdown-toggle-nocaret"
                       to="tv-shows"
                       data-bs-toggle="dropdown"
                     >
-                      Srevices <i class="bx bx-chevron-down ms-1"></i>
+                      Srevices <i className="bx bx-chevron-down ms-1"></i>
                     </Link>
-                    <div class="dropdown-menu dropdown-large-menu">
-                      <div class="row">
-                        <div class="col-6">
-                          <h6 class="large-menu-title">Online Services</h6>
-                          <ul class="list-unstyled">
+                    <div className="dropdown-menu dropdown-large-menu">
+                      <div className="row">
+                        <div className="col-6">
+                          <h6 className="large-menu-title">Online Services</h6>
+                          <ul className="list-unstyled">
                             <li>
                               <Link to="javascript:;">PAN Card</Link>
                             </li>
@@ -70,9 +70,9 @@ export default function BottomHeader() {
                           </ul>
                         </div>
                         {/* <!-- end col-3 --> */}
-                        <div class="col-6">
-                          <h6 class="large-menu-title">Result</h6>
-                          <ul class="list-unstyled">
+                        <div className="col-6">
+                          <h6 className="large-menu-title">Result</h6>
+                          <ul className="list-unstyled">
                             <li>
                               <Link to="https://mpresults.nic.in/mpbse/hsc10_2023/X_class_23.htm" target="_blank">
                                 10<sup>th</sup>Result
@@ -104,9 +104,9 @@ export default function BottomHeader() {
                           </ul>
                         </div>
                         {/* <!-- end col-3 --> */}
-                        {/* <!-- <div class="col-12 col-xl-3">
-                                    <h6 class="large-menu-title">Groceries</h6>
-                                    <ul class="list-unstyled">
+                        {/* <!-- <div className="col-12 col-xl-3">
+                                    <h6 className="large-menu-title">Groceries</h6>
+                                    <ul className="list-unstyled">
                                         <li><Link to="javascript:;">Bakery and Bread</Link>
                                         </li>
                                         <li><Link to="javascript:;">Meat and Seafood</Link>
@@ -125,9 +125,9 @@ export default function BottomHeader() {
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-12 col-xl-3">
-                                    <h6 class="large-menu-title">Groceries</h6>
-                                    <ul class="list-unstyled">
+                                <div className="col-12 col-xl-3">
+                                    <h6 className="large-menu-title">Groceries</h6>
+                                    <ul className="list-unstyled">
                                         <li><Link to="javascript:;">Bakery and Bread</Link>
                                         </li>
                                         <li><Link to="javascript:;">Meat and Seafood</Link>
@@ -150,19 +150,19 @@ export default function BottomHeader() {
                       </div>
                     </div>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li className="nav-item dropdown">
                     <Link
-                      class="nav-link  dropdown-toggle-nocaret"
+                      className="nav-link  dropdown-toggle-nocaret"
                       to="tv-shows"
                       data-bs-toggle="dropdown"
                     >
-                      Products <i class="bx bx-chevron-down ms-1"></i>
+                      Products <i className="bx bx-chevron-down ms-1"></i>
                     </Link>
-                    <div class="dropdown-menu dropdown-large-menu">
-                      <div class="row">
-                        <div class="col-6">
-                          <h6 class="large-menu-title">Electronics</h6>
-                          <ul class="list-unstyled">
+                    <div className="dropdown-menu dropdown-large-menu">
+                      <div className="row">
+                        <div className="col-6">
+                          <h6 className="large-menu-title">Electronics</h6>
+                          <ul className="list-unstyled">
                             <li>
                               <Link to="javascript:;">Moniters</Link>
                             </li>
@@ -190,9 +190,9 @@ export default function BottomHeader() {
                           </ul>
                         </div>
                         {/* <!-- end col-3 --> */}
-                        <div class="col-6">
-                          <h6 class="large-menu-title">Accessories</h6>
-                          <ul class="list-unstyled">
+                        <div className="col-6">
+                          <h6 className="large-menu-title">Accessories</h6>
+                          <ul className="list-unstyled">
                             <li>
                               <Link to="javascript:;">Mouse</Link>
                             </li>
@@ -222,9 +222,9 @@ export default function BottomHeader() {
                         {/* <!-- end col-3 -->
                                 
                                 <!-- end col-3 -->
-                                <!-- <div class="col-12 col-xl-4">
-                                    <h6 class="large-menu-title">Groceries</h6>
-                                    <ul class="list-unstyled">
+                                <!-- <div className="col-12 col-xl-4">
+                                    <h6 className="large-menu-title">Groceries</h6>
+                                    <ul className="list-unstyled">
                                         <li><Link to="javascript:;">Bakery and Bread</Link>
                                         </li>
                                         <li><Link to="javascript:;">Meat and Seafood</Link>
@@ -241,35 +241,35 @@ export default function BottomHeader() {
                                         </li>
                                         <li><Link to="javascript:;">Dairy and Eggs</Link>
                                         </li>
-                                        <li class="nav-item dropdown"><Link
-                                                class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                                        <li className="nav-item dropdown"><Link
+                                                className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                                 to="#">Shop Layouts <i
-                                                    class='bx bx-chevron-right float-end'></i></Link>
-                                            <ul class="submenu dropdown-menu">
-                                                <li><Link class="dropdown-item"
+                                                    className='bx bx-chevron-right float-end'></i></Link>
+                                            <ul className="submenu dropdown-menu">
+                                                <li><Link className="dropdown-item"
                                                         to="shop-grid-left-sidebar">Shop
                                                         Grid - Left Sidebar</Link>
                                                 </li>
-                                                <li><Link class="dropdown-item"
+                                                <li><Link className="dropdown-item"
                                                         to="shop-grid-right-sidebar">Shop Grid -
                                                         Right
                                                         Sidebar</Link>
                                                 </li>
-                                                <li><Link class="dropdown-item"
+                                                <li><Link className="dropdown-item"
                                                         to="shop-list-left-sidebar">Shop
                                                         List - Left Sidebar</Link>
                                                 </li>
-                                                <li><Link class="dropdown-item"
+                                                <li><Link className="dropdown-item"
                                                         to="shop-list-right-sidebar">Shop List -
                                                         Right
                                                         Sidebar</Link>
                                                 </li>
-                                                <li><Link class="dropdown-item"
+                                                <li><Link className="dropdown-item"
                                                         to="shop-grid-filter-on-top">Shop Grid -
                                                         Top
                                                         Filter</Link>
                                                 </li>
-                                                <li><Link class="dropdown-item"
+                                                <li><Link className="dropdown-item"
                                                         to="shop-list-filter-on-top">Shop List -
                                                         Top
                                                         Filter</Link>
@@ -282,27 +282,27 @@ export default function BottomHeader() {
                       </div>
                     </div>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li className="nav-item dropdown">
                     <Link
-                      class="nav-link  dropdown-toggle-nocaret"
+                      className="nav-link  dropdown-toggle-nocaret"
                       to="javascript:;"
                       data-bs-toggle="dropdown"
                     >
-                      Shop <i class="bx bx-chevron-down ms-1"></i>
+                      Shop <i className="bx bx-chevron-down ms-1"></i>
                     </Link>
-                    <ul class="dropdown-menu">
-                      <li class="nav-item dropdown">
+                    <ul className="dropdown-menu">
+                      <li className="nav-item dropdown">
                         <Link
-                          class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                          className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                           to="#"
                         >
                           Shop Layouts{" "}
-                          <i class="bx bx-chevron-right float-end"></i>
+                          <i className="bx bx-chevron-right float-end"></i>
                         </Link>
-                        <ul class="submenu dropdown-menu">
+                        <ul className="submenu dropdown-menu">
                           <li>
                             <Link
-                              class="dropdown-item"
+                              className="dropdown-item"
                               to="shop-grid-left-sidebar"
                             >
                               Shop Grid - Left Sidebar
@@ -310,7 +310,7 @@ export default function BottomHeader() {
                           </li>
                           <li>
                             <Link
-                              class="dropdown-item"
+                              className="dropdown-item"
                               to="shop-grid-right-sidebar"
                             >
                               Shop Grid - Right Sidebar
@@ -318,7 +318,7 @@ export default function BottomHeader() {
                           </li>
                           <li>
                             <Link
-                              class="dropdown-item"
+                              className="dropdown-item"
                               to="shop-list-left-sidebar"
                             >
                               Shop List - Left Sidebar
@@ -326,7 +326,7 @@ export default function BottomHeader() {
                           </li>
                           <li>
                             <Link
-                              class="dropdown-item"
+                              className="dropdown-item"
                               to="shop-list-right-sidebar"
                             >
                               Shop List - Right Sidebar
@@ -334,7 +334,7 @@ export default function BottomHeader() {
                           </li>
                           <li>
                             <Link
-                              class="dropdown-item"
+                              className="dropdown-item"
                               to="shop-grid-filter-on-top"
                             >
                               Shop Grid - Top Filter
@@ -342,7 +342,7 @@ export default function BottomHeader() {
                           </li>
                           <li>
                             <Link
-                              class="dropdown-item"
+                              className="dropdown-item"
                               to="shop-list-filter-on-top"
                             >
                               Shop List - Top Filter
@@ -351,105 +351,105 @@ export default function BottomHeader() {
                         </ul>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="product-details">
+                        <Link className="dropdown-item" to="product-details">
                           Product Details
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="shop-cart">
+                        <Link className="dropdown-item" to="shop-cart">
                           Shop Cart
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="shop-categories">
+                        <Link className="dropdown-item" to="shop-categories">
                           Shop Categories
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="checkout-details">
+                        <Link className="dropdown-item" to="checkout-details">
                           Billing Details
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="checkout-shipping">
+                        <Link className="dropdown-item" to="checkout-shipping">
                           Checkout Shipping
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="checkout-payment">
+                        <Link className="dropdown-item" to="checkout-payment">
                           Payment Method
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="checkout-review">
+                        <Link className="dropdown-item" to="checkout-review">
                           Order Review
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="checkout-complete">
+                        <Link className="dropdown-item" to="checkout-complete">
                           Checkout Complete
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="order-tracking">
+                        <Link className="dropdown-item" to="order-tracking">
                           Order Tracking
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="product-comparison">
+                        <Link className="dropdown-item" to="product-comparison">
                           Product Comparison
                         </Link>
                       </li>
                     </ul>
                   </li>
-                  {/* <li class="nav-item dropdown">
+                  {/* <li className="nav-item dropdown">
                     <Link
-                      class="nav-link  dropdown-toggle-nocaret"
+                      className="nav-link  dropdown-toggle-nocaret"
                       to="javascript:;"
                       data-bs-toggle="dropdown"
                     >
-                      Retailers <i class="bx bx-chevron-down ms-1"></i>
+                      Retailers <i className="bx bx-chevron-down ms-1"></i>
                     </Link>
-                    <ul class="dropdown-menu">
-                      {/* <!-- <li class="nav-item dropdown"><Link
-                                    class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                    <ul className="dropdown-menu">
+                      {/* <!-- <li className="nav-item dropdown"><Link
+                                    className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                     to="#">Shop
-                                    Layouts <i class='bx bx-chevron-right float-end'></i></Link>
-                                <ul class="submenu dropdown-menu">
-                                    <li><Link class="dropdown-item" to="shop-grid-left-sidebar">Shop
+                                    Layouts <i className='bx bx-chevron-right float-end'></i></Link>
+                                <ul className="submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" to="shop-grid-left-sidebar">Shop
                                             Grid
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-right-sidebar">Shop
                                             Grid
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item" to="shop-list-left-sidebar">Shop
+                                    <li><Link className="dropdown-item" to="shop-list-left-sidebar">Shop
                                             List
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-right-sidebar">Shop
                                             List
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-filter-on-top">Shop
                                             Grid
                                             -
                                             Top
                                             Filter</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-filter-on-top">Shop
                                             List
                                             -
@@ -459,127 +459,127 @@ export default function BottomHeader() {
                                 </ul>
                             </li> --> */}
                     {/*  <li>
-                        <Link class="dropdown-item" to="product-details">
+                        <Link className="dropdown-item" to="product-details">
                           Retailer-1
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="shop-cart">
+                        <Link className="dropdown-item" to="shop-cart">
                           Retailer-2
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="shop-categories">
+                        <Link className="dropdown-item" to="shop-categories">
                           Retailer-3
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="checkout-details">
+                        <Link className="dropdown-item" to="checkout-details">
                           Retailer-4
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="checkout-shipping">
+                        <Link className="dropdown-item" to="checkout-shipping">
                           Retailer-5
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="checkout-payment">
+                        <Link className="dropdown-item" to="checkout-payment">
                           Retailer-6
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="checkout-review">
+                        <Link className="dropdown-item" to="checkout-review">
                           Retailer-7
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="checkout-complete">
+                        <Link className="dropdown-item" to="checkout-complete">
                           Retailer-8
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="order-tracking">
+                        <Link className="dropdown-item" to="order-tracking">
                           Retailer-9
                         </Link>
                       </li>
                       <li>
-                        <Link class="dropdown-item" to="product-comparison">
+                        <Link className="dropdown-item" to="product-comparison">
                           Retailer-10
                         </Link>
                       </li>
                     </ul>
                   </li> */}
-                  {/* <!-- <li class="nav-item dropdown">
-                        <Link class="nav-link dropdown-toggle dropdown-toggle-nocaret" to="javascript:;"
+                  {/* <!-- <li className="nav-item dropdown">
+                        <Link className="nav-link dropdown-toggle dropdown-toggle-nocaret" to="javascript:;"
                             data-bs-toggle="dropdown">
-                            Account <i class='bx bx-chevron-down ms-1'></i>
+                            Account <i className='bx bx-chevron-down ms-1'></i>
                         </Link>
-                        <ul class="dropdown-menu">
-                            <li><Link class="dropdown-item" to="account-dashboard">Dashboard</Link>
+                        <ul className="dropdown-menu">
+                            <li><Link className="dropdown-item" to="account-dashboard">Dashboard</Link>
                             </li>
-                            <li><Link class="dropdown-item" to="account-downloads">Downloads</Link>
+                            <li><Link className="dropdown-item" to="account-downloads">Downloads</Link>
                             </li>
-                            <li><Link class="dropdown-item" to="account-orders">My Orders</Link>
+                            <li><Link className="dropdown-item" to="account-orders">My Orders</Link>
                             </li>
-                            <li><Link class="dropdown-item" to="account-user-details">User
+                            <li><Link className="dropdown-item" to="account-user-details">User
                                     Details</Link>
                             </li>
                             <li>
-                                <hr class="dropdown-divider">
+                                <hr className="dropdown-divider">
                             </li>
-                            <li><Link class="dropdown-item" to="authentication-login">Login</Link></li>
-                            <li><Link class="dropdown-item"
+                            <li><Link className="dropdown-item" to="authentication-login">Login</Link></li>
+                            <li><Link className="dropdown-item"
                                     to="authentication-register">Register</Link></li>
-                            <li><Link class="dropdown-item"
+                            <li><Link className="dropdown-item"
                                     to="authentication-reset-password">Password</Link></li>
                         </ul>
                     </li> -->
-                    <!-- <li class="nav-item dropdown">
-                        <Link class="nav-link dropdown-toggle dropdown-toggle-nocaret" to="javascript:;"
+                    <!-- <li className="nav-item dropdown">
+                        <Link className="nav-link dropdown-toggle dropdown-toggle-nocaret" to="javascript:;"
                             data-bs-toggle="dropdown">
-                            Payments <i class='bx bx-chevron-down ms-1'></i>
+                            Payments <i className='bx bx-chevron-down ms-1'></i>
                         </Link>
-                        <ul class="dropdown-menu">
-                            <li class="nav-item dropdown"><Link
-                                    class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                        <ul className="dropdown-menu">
+                            <li className="nav-item dropdown"><Link
+                                    className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                     to="#">Shop
-                                    Layouts <i class='bx bx-chevron-right float-end'></i></Link>
-                                <ul class="submenu dropdown-menu">
-                                    <li><Link class="dropdown-item" to="shop-grid-left-sidebar">Shop
+                                    Layouts <i className='bx bx-chevron-right float-end'></i></Link>
+                                <ul className="submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" to="shop-grid-left-sidebar">Shop
                                             Grid
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-right-sidebar">Shop
                                             Grid
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item" to="shop-list-left-sidebar">Shop
+                                    <li><Link className="dropdown-item" to="shop-list-left-sidebar">Shop
                                             List
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-right-sidebar">Shop
                                             List
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-filter-on-top">Shop
                                             Grid
                                             -
                                             Top
                                             Filter</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-filter-on-top">Shop
                                             List
                                             -
@@ -588,45 +588,45 @@ export default function BottomHeader() {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown"><Link
-                                    class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                            <li className="nav-item dropdown"><Link
+                                    className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                     to="#">Product
-                                    Details <i class='bx bx-chevron-right float-end'></i></Link>
-                                <ul class="submenu dropdown-menu">
-                                    <li><Link class="dropdown-item" to="shop-grid-left-sidebar">Shop
+                                    Details <i className='bx bx-chevron-right float-end'></i></Link>
+                                <ul className="submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" to="shop-grid-left-sidebar">Shop
                                             Grid
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-right-sidebar">Shop
                                             Grid
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item" to="shop-list-left-sidebar">Shop
+                                    <li><Link className="dropdown-item" to="shop-list-left-sidebar">Shop
                                             List
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-right-sidebar">Shop
                                             List
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-filter-on-top">Shop
                                             Grid
                                             -
                                             Top
                                             Filter</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-filter-on-top">Shop
                                             List
                                             -
@@ -635,45 +635,45 @@ export default function BottomHeader() {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown"><Link
-                                    class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                            <li className="nav-item dropdown"><Link
+                                    className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                     to="#">Shop
-                                    Cart <i class='bx bx-chevron-right float-end'></i></Link>
-                                <ul class="submenu dropdown-menu">
-                                    <li><Link class="dropdown-item" to="shop-grid-left-sidebar">Shop
+                                    Cart <i className='bx bx-chevron-right float-end'></i></Link>
+                                <ul className="submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" to="shop-grid-left-sidebar">Shop
                                             Grid
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-right-sidebar">Shop
                                             Grid
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item" to="shop-list-left-sidebar">Shop
+                                    <li><Link className="dropdown-item" to="shop-list-left-sidebar">Shop
                                             List
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-right-sidebar">Shop
                                             List
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-filter-on-top">Shop
                                             Grid
                                             -
                                             Top
                                             Filter</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-filter-on-top">Shop
                                             List
                                             -
@@ -682,45 +682,45 @@ export default function BottomHeader() {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown"><Link
-                                    class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                            <li className="nav-item dropdown"><Link
+                                    className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                     to="#">Shop
-                                    Categories <i class='bx bx-chevron-right float-end'></i></Link>
-                                <ul class="submenu dropdown-menu">
-                                    <li><Link class="dropdown-item" to="shop-grid-left-sidebar">Shop
+                                    Categories <i className='bx bx-chevron-right float-end'></i></Link>
+                                <ul className="submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" to="shop-grid-left-sidebar">Shop
                                             Grid
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-right-sidebar">Shop
                                             Grid
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item" to="shop-list-left-sidebar">Shop
+                                    <li><Link className="dropdown-item" to="shop-list-left-sidebar">Shop
                                             List
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-right-sidebar">Shop
                                             List
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-filter-on-top">Shop
                                             Grid
                                             -
                                             Top
                                             Filter</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-filter-on-top">Shop
                                             List
                                             -
@@ -729,45 +729,45 @@ export default function BottomHeader() {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown"><Link
-                                    class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                            <li className="nav-item dropdown"><Link
+                                    className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                     to="#">Billing
-                                    Details <i class='bx bx-chevron-right float-end'></i></Link>
-                                <ul class="submenu dropdown-menu">
-                                    <li><Link class="dropdown-item" to="shop-grid-left-sidebar">Shop
+                                    Details <i className='bx bx-chevron-right float-end'></i></Link>
+                                <ul className="submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" to="shop-grid-left-sidebar">Shop
                                             Grid
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-right-sidebar">Shop
                                             Grid
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item" to="shop-list-left-sidebar">Shop
+                                    <li><Link className="dropdown-item" to="shop-list-left-sidebar">Shop
                                             List
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-right-sidebar">Shop
                                             List
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-filter-on-top">Shop
                                             Grid
                                             -
                                             Top
                                             Filter</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-filter-on-top">Shop
                                             List
                                             -
@@ -776,45 +776,45 @@ export default function BottomHeader() {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown"><Link
-                                    class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                            <li className="nav-item dropdown"><Link
+                                    className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                     to="#">Checkout
-                                    Shipping <i class='bx bx-chevron-right float-end'></i></Link>
-                                <ul class="submenu dropdown-menu">
-                                    <li><Link class="dropdown-item" to="shop-grid-left-sidebar">Shop
+                                    Shipping <i className='bx bx-chevron-right float-end'></i></Link>
+                                <ul className="submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" to="shop-grid-left-sidebar">Shop
                                             Grid
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-right-sidebar">Shop
                                             Grid
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item" to="shop-list-left-sidebar">Shop
+                                    <li><Link className="dropdown-item" to="shop-list-left-sidebar">Shop
                                             List
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-right-sidebar">Shop
                                             List
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-filter-on-top">Shop
                                             Grid
                                             -
                                             Top
                                             Filter</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-filter-on-top">Shop
                                             List
                                             -
@@ -823,45 +823,45 @@ export default function BottomHeader() {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown"><Link
-                                    class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                            <li className="nav-item dropdown"><Link
+                                    className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                     to="#">Payment
-                                    Method<i class='bx bx-chevron-right float-end'></i></Link>
-                                <ul class="submenu dropdown-menu">
-                                    <li><Link class="dropdown-item" to="shop-grid-left-sidebar">Shop
+                                    Method<i className='bx bx-chevron-right float-end'></i></Link>
+                                <ul className="submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" to="shop-grid-left-sidebar">Shop
                                             Grid
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-right-sidebar">Shop
                                             Grid
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item" to="shop-list-left-sidebar">Shop
+                                    <li><Link className="dropdown-item" to="shop-list-left-sidebar">Shop
                                             List
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-right-sidebar">Shop
                                             List
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-filter-on-top">Shop
                                             Grid
                                             -
                                             Top
                                             Filter</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-filter-on-top">Shop
                                             List
                                             -
@@ -870,45 +870,45 @@ export default function BottomHeader() {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown"><Link
-                                    class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                            <li className="nav-item dropdown"><Link
+                                    className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                     to="#">Order
-                                    Review <i class='bx bx-chevron-right float-end'></i></Link>
-                                <ul class="submenu dropdown-menu">
-                                    <li><Link class="dropdown-item" to="shop-grid-left-sidebar">Shop
+                                    Review <i className='bx bx-chevron-right float-end'></i></Link>
+                                <ul className="submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" to="shop-grid-left-sidebar">Shop
                                             Grid
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-right-sidebar">Shop
                                             Grid
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item" to="shop-list-left-sidebar">Shop
+                                    <li><Link className="dropdown-item" to="shop-list-left-sidebar">Shop
                                             List
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-right-sidebar">Shop
                                             List
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-filter-on-top">Shop
                                             Grid
                                             -
                                             Top
                                             Filter</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-filter-on-top">Shop
                                             List
                                             -
@@ -917,45 +917,45 @@ export default function BottomHeader() {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown"><Link
-                                    class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                            <li className="nav-item dropdown"><Link
+                                    className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                     to="#">Checkout
-                                    Complete <i class='bx bx-chevron-right float-end'></i></Link>
-                                <ul class="submenu dropdown-menu">
-                                    <li><Link class="dropdown-item" to="shop-grid-left-sidebar">Shop
+                                    Complete <i className='bx bx-chevron-right float-end'></i></Link>
+                                <ul className="submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" to="shop-grid-left-sidebar">Shop
                                             Grid
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-right-sidebar">Shop
                                             Grid
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item" to="shop-list-left-sidebar">Shop
+                                    <li><Link className="dropdown-item" to="shop-list-left-sidebar">Shop
                                             List
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-right-sidebar">Shop
                                             List
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-filter-on-top">Shop
                                             Grid
                                             -
                                             Top
                                             Filter</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-filter-on-top">Shop
                                             List
                                             -
@@ -964,45 +964,45 @@ export default function BottomHeader() {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown"><Link
-                                    class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                            <li className="nav-item dropdown"><Link
+                                    className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                     to="#">Order
-                                    Tracking <i class='bx bx-chevron-right float-end'></i></Link>
-                                <ul class="submenu dropdown-menu">
-                                    <li><Link class="dropdown-item" to="shop-grid-left-sidebar">Shop
+                                    Tracking <i className='bx bx-chevron-right float-end'></i></Link>
+                                <ul className="submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" to="shop-grid-left-sidebar">Shop
                                             Grid
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-right-sidebar">Shop
                                             Grid
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item" to="shop-list-left-sidebar">Shop
+                                    <li><Link className="dropdown-item" to="shop-list-left-sidebar">Shop
                                             List
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-right-sidebar">Shop
                                             List
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-filter-on-top">Shop
                                             Grid
                                             -
                                             Top
                                             Filter</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-filter-on-top">Shop
                                             List
                                             -
@@ -1011,45 +1011,45 @@ export default function BottomHeader() {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown"><Link
-                                    class="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
+                            <li className="nav-item dropdown"><Link
+                                    className="dropdown-item dropdown-toggle dropdown-toggle-nocaret"
                                     to="#">Product
-                                    Compairison <i class='bx bx-chevron-right float-end'></i></Link>
-                                <ul class="submenu dropdown-menu">
-                                    <li><Link class="dropdown-item" to="shop-grid-left-sidebar">Shop
+                                    Compairison <i className='bx bx-chevron-right float-end'></i></Link>
+                                <ul className="submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" to="shop-grid-left-sidebar">Shop
                                             Grid
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-right-sidebar">Shop
                                             Grid
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item" to="shop-list-left-sidebar">Shop
+                                    <li><Link className="dropdown-item" to="shop-list-left-sidebar">Shop
                                             List
                                             -
                                             Left
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-right-sidebar">Shop
                                             List
                                             -
                                             Right
                                             Sidebar</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-grid-filter-on-top">Shop
                                             Grid
                                             -
                                             Top
                                             Filter</Link>
                                     </li>
-                                    <li><Link class="dropdown-item"
+                                    <li><Link className="dropdown-item"
                                             to="shop-list-filter-on-top">Shop
                                             List
                                             -

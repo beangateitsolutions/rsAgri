@@ -30,27 +30,27 @@ export default function News() {
     }
 
 
-    const [data, setData]=useState();
+    // const [data, setData]=useState();
 
-    fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=22e27b08ab2c4a969d8e4e982df67ea8")
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(function (responseData) {
-          setData(responseData)
+    // fetch("https://newsapi.org/v2/top-headlines?country=us&apiKey=22e27b08ab2c4a969d8e4e982df67ea8")
+    //   .then(function (response) {
+    //     if (!response.ok) {
+    //       throw new Error('Network response was not ok');
+    //     }
+    //     return response.json();
+    //   })
+    //   .then(function (responseData) {
+    //       setData(responseData)
           
-        //   console.log(newArtics.articles); 
-        // // Handle the response data here
-      })
-      .catch(function (error) {
-        console.error('Fetch error:', error);
-      });
+    //     //   console.log(newArtics.articles); 
+    //     // // Handle the response data here
+    //   })
+    //   .catch(function (error) {
+    //     console.error('Fetch error:', error);
+    //   });
      
 
-    console.log(data)
+    // console.log(data)
 
 
 
